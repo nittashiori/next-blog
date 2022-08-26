@@ -6,6 +6,7 @@ export default function Home() {
     <Hero
       title="CUBE"
       subtitle="アウトプットしていくサイト"
+      imageOn
     />
   )
 }
