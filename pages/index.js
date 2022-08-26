@@ -1,24 +1,15 @@
-function Decoration({ children }) {
-  return (
-    <div style={{ color: "red" }}>
-      { children }
-    </div>
-  )
-}
+import Header from "../components/header"
+import Hero from "../components/hero"
+import Footer from "../components/footer"
 
 export default function Home() {
   return (
     <>
-      <header>HEADER</header>
-
-      <main>
-        <Decoration>
-          <h1>CUBE</h1>
-          <p>アウトプットしていくサイト</p>
-        </Decoration>
-      </main>
-
-      <footer>FOOTER</footer>
+      <Header />
+        <main>
+          <Hero />
+        </main>
+      <Footer />
     </>
   )
 }
