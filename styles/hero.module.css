@@ -2,6 +2,16 @@
   composes: sideBySideCenter from "styles/utils.module.css";
 }
 
+.image {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .image {
+    width: 50%;
+  }
+}
+
 .text {
   padding-top: calc(var(--display) * 0.5);
   padding-top: calc(var(--display) * 0.7)
