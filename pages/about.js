@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Container from "components/container"
 import Hero from "components/hero"
 import PostBody from "components/post-body"
@@ -10,6 +11,9 @@ export default function About() {
   return (
     <>
     <Container>
+    <Head>
+      <title>アバウト</title>
+    </Head>
       <Hero
         title="About"
         subtitle="About development activities"
