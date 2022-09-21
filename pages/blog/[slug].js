@@ -14,7 +14,6 @@ import { getPlaiceholder } from "plaiceholder"
 
 // ローカルの代替アイキャッチ画像
 import { eyecatchLocal } from "lib/constants"
-import next from "next"
 
 export default function Post({
   title,
