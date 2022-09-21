@@ -9,23 +9,27 @@ export default function Nav() {
     setNavIsOpen((prev) => !prev)
   }
 
+  const closeNav = () => {
+    setNavIsOpen(false)
+  }
+
   return (
     <nav className={navIsOpen ? styles.open : styles.close}>
       <button className={styles.btn} onClick={toggleNav}>MENU</button>
       <ul className={styles.list}>
         <li>
           <Link href="/">
-            <a>Home</a>
+            <a onClick={closeNav}>Home</a>
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <a>About</a>
+            <a onClick={closeNav}>About</a>
           </Link>
         </li>
         <li>
           <Link href="/blog">
-            <a>Blog</a>
+            <a onClick={closeNav}>Blog</a>
           </Link>
         </li>
       </ul>
